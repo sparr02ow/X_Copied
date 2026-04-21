@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    font-family: Robot,Arial;
+    color: white;
+}
+main{
+    background-color: black;
+    min-height: 100vh;
+}
+
+header{
+    height: 52px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.185);
+    border-bottom-style: solid;
+    margin-right: 33.7vw; /*or width: 39vw;*/
+    margin-left: 26.2vw;
+    /*width: 39vw;*/
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+section{
+    margin-left: 26.2vw;
+    padding-top: 8vh;
+    width: 38.89vw; /* width of middle is 38.89vw and*/
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.185);
+    border-style: solid;
+}
+nav{
+    width: 26.2vw;
+    border-right-width: 1px;
+    border-right-color: rgba(255, 255, 255, 0.185);
+    border-right-style: solid;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+p{
+    margin: 0;
+}
+
+@media (min-width:1px) and (max-width: 500px) {
+    nav{
+        border-top-width: 1px;
+        border-top-color: rgba(255, 255, 255, 0.185);
+        border-top-style: solid;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+    }
+    header{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 13.2vh;
+        backdrop-filter: blur(10px);
+    }
+    section,
+    header{
+        width: 99.5%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section{
+        padding-top: 13.5vh;
+    }
+}
+
+@media (min-width:500px) and (max-width: 1003px) {
+    nav{
+        width:10vw;
+    }
+    section,
+    header{
+        margin-left: 10vw;
+        width: 89.4%;
+    }
+}
+
+@media (min-width:1003px) and (max-width: 1280px) {
+    nav{
+        width:14.6vw;
+    }
+    section,
+    header{
+        margin-left: 14.6vw;
+        width: 45.8vw;
+    }
+}

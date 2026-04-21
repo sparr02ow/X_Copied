@@ -1,0 +1,103 @@
+.small-window-div{
+    display: none; /*I want this part of the header to be unvisible for all screen sizes only the small-medium ones*/
+}
+.for_you-following-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.selecting-header-div1,
+.selecting-header-div2{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bol;
+    color: rgba(255, 255, 255, 0.527);
+    transition: 0.15s;
+    height: 100%;
+}
+.selecting-header-div1:hover,
+.selecting-header-div2:hover{
+        background-color: rgba(255, 255, 255, 0.112);
+        cursor: pointer;
+}
+.selecting-header-div1:active,
+.selecting-header-div2:active{
+    background-color: rgba(255, 255, 255, 0.23);
+}
+.header2{
+    margin-left: 65.25vw;
+    height: 52px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.search-bar-div{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-bar-icon{
+    position: absolute;
+    top: 4px;
+    left: 29px;
+    height: 16px;
+    padding: 13px 0px 13px 15px;
+}
+.search-bar{
+    margin-left: 31px;
+    height: 36px;
+    border-radius: 50px;
+    width: 316px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.185);
+    padding-left: 32px;
+    padding-top: 4px;
+    font-size: 14px;
+    background-color: black;
+    margin-bottom: 2px;
+}
+
+@media (min-width:1px) and (max-width: 500px) {
+    .header2{
+        display: none;
+    }
+
+    .small-window-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:10px 15px 0px 15px;
+    }
+    .x-partion-header{
+        margin-left: 60px;
+    }
+    .my-accountpic-header{
+        height: 36px;
+        border-radius: 18px;
+    }
+    .for_you-following-div{
+        margin:0px 15px 0px 15px;
+    }
+}
+@media (min-width:500px) and (max-width: 1003px) {
+    
+    .header2{
+        display: none;
+    }
+}
+@media (min-width:1003px) and (max-width: 1280px) {
+    
+    .header2{
+        margin-left: 60.5vw;
+    }
+}

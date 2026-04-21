@@ -1,0 +1,311 @@
+.sidebar-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 9vw;
+}
+.x-partion{
+    display: inline-flex;
+    padding: 8px;
+    border-radius: 50%;
+    margin-top: 1px;
+    cursor: pointer;
+}
+.partion,
+.save-partion,
+.boost-partion,
+.follow-partion,
+.premium-partion,
+.profile-partion,
+.more-partion{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.15s;
+}
+.save-partion,
+.boost-partion{
+    display: none;
+    /* this setting will hide these divs from all screens*/
+}
+.partion:hover,
+.x-partion:hover,
+.follow-partion:hover,
+.premium-partion:hover,
+.profile-partion:hover,
+.more-partion:hover{
+    background-color: rgba(255, 255, 255, 0.141);
+}
+.sidebar-icon{
+    height: 30px;
+}
+.white-space{
+    position: absolute;
+    background-color: rgb(93, 143, 249);
+    border-radius: 3px;
+    height: 6px;
+    top: 6px;
+    left: 38px;
+}
+.notifications-counter{
+    background-color: rgb(93, 143, 249);
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    padding: 2.5px 5px 2.5px 5px;
+    border-radius: 50%;
+    top: 6px;
+    left: 25px;
+}
+.sidebar-text{
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.sidebar-button-div{
+    margin-top: 10px;
+    margin-left: 9vw;
+    width: 15vw;
+}
+.sidebar-button{
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.819);
+    font-weight: bold;
+}
+.sidebar-button:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    cursor: pointer;
+}
+.username-div{
+    display: inline-flex;
+    margin-left: 9vw;
+    margin-top: 65px;
+    border-radius: 50px;
+    padding: 8px;
+    transition: 0.15;
+}
+.username-div:hover{
+    background-color: rgba(255, 255, 255, 0.096);
+    cursor: pointer;
+}
+.my-accountpic{
+    height: 40px;
+    border-radius: 20px;
+}
+.username-information{
+    margin-left: 10px;
+}
+.username{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+.ID{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.355);
+    margin-top: 5px;
+}
+.three-dots{
+    width: 20px;
+    margin-left: 55px;
+    margin-right: 5px;
+}
+
+@media (min-width:1px) and (max-width: 500px) {
+    .sidebar-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: -5px;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+.follow-partion,
+.premium-partion,
+.profile-partion,
+.more-partion{
+    display: none;
+}
+.sidebar-text{
+    display: none;
+}
+.username-div,
+.sidebar-button-div,
+.x-partion{
+    display: none;
+}
+}
+
+@media (min-width:500px) and (max-width: 768px) {
+    .sidebar-text,
+    .username-information,
+    .three-dots{
+        display: none;
+    }
+    .sidebar-button-div,
+    .username-div{
+        margin-left: 4vw;
+    }
+    .sidebar-container{
+        margin-top: 10px;
+        margin-left: 2vw;
+        flex-direction: column;
+    }
+    .partion{
+        padding: 8px;
+    }
+    .x-partion{
+        padding: 7px;
+    }.sidebar-icon{
+        height: 27px;
+    }
+    .username-div{
+        margin-top: 40px;
+        margin-left: 2vw;
+    }
+    .sidebar-button-div{
+        margin-left: 2vw;
+    }
+    .sidebar-button{
+        width:42%;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1003px) {
+    .sidebar-text,
+    .username-information,
+    .three-dots{
+        display: none;
+    }
+    .sidebar-button-div,
+    .username-div{
+        margin-left: 4vw;
+    }
+    .sidebar-container{
+        margin-top: 10px;
+        margin-left: 3vw;
+    }
+    .partion{
+        padding: 8px;
+    }
+    .x-partion{
+        padding: 7px;
+    }.sidebar-icon{
+        height: 27px;
+    }
+    .username-div{
+        margin-top: 40px;
+        margin-left: 3vw;
+    }
+    .sidebar-button-div{
+        margin-left: 3vw;
+    }
+    .sidebar-button{
+        width:42%
+    }
+}
+
+/* to make the "save-partion" and "boost-partion" visble */
+@media (min-width:500px) and  (min-height:750px) {
+    .save-partion,
+    .boost-partion{
+        display: block;
+    }
+}
+
+/*ipad mini */
+@media (max-width:768px) and (max-width:770px)
+and (min-height:1024px) and (max-height:1026px) {
+    .sidebar-text,
+    .username-information,
+    .three-dots{
+        display: none;
+    }
+    .sidebar-button-div,
+    .username-div{
+        margin-left: 11vw;
+    }
+    .partion{
+        padding: 8px;
+    }
+    .x-partion{
+        padding: 7px;
+    }.sidebar-icon{
+        height: 27px;
+    }
+    .username-div{
+        margin-top: 30vh;
+        margin-left: 3vw;
+    }
+    .sidebar-button-div{
+        margin-left: 3vw;
+    }
+    .sidebar-button{
+        width:42%;
+    }
+}
+/* ipad air settings
+I've determined the dimensions of iPad Air so it can not be overlap
+with iPad mini settings */
+@media (min-width:820px) and (max-width:822px)
+and (min-height:1180px) and (max-height: 1182px) {
+    .sidebar-text,
+    .username-information,
+    .three-dots{
+        display: none;
+    }
+    .sidebar-button-div,
+    .username-div{
+        margin-left: 7vw;
+    }
+    .sidebar-container{
+        margin-top: 10px;
+        margin-left: 3vw;
+    }
+    .partion{
+        padding: 8px;
+    }
+    .x-partion{
+        padding: 7px;
+    }.sidebar-icon{
+        height: 27px;
+    }
+    .username-div{
+        margin-top: 38vh;
+        margin-left: 3vw;
+    }
+    .sidebar-button-div{
+        margin-left: 3vw;
+    }
+    .sidebar-button{
+        width:40%
+    }
+}
+@media (min-width: 1024px) and (max-width:1026px)
+and (min-height:1366px) and (max-height: 1368px) {
+    .username-div{
+        margin-top: 38vh;
+    }
+}
+@media (min-width:1003px) and (max-width: 1280px) {
+    .sidebar-text,
+    .username-information,
+    .three-dots{
+        display: none;
+    }
+    .sidebar-button{
+        width:35%
+    }
+}
+
+/*hide the "save-partion" and the "boost-partion"*/

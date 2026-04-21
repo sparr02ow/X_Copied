@@ -1,0 +1,25 @@
+
+section{
+    padding: 25px 0px 0px 0px;
+    border-bottom: none;
+    width: 63.75vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+@media (max-width:514px) {
+    section{
+        width:99.5%;
+    }
+}
+@media (min-width: 514px) and (max-width:830px){
+    section{
+        width:87%;
+    }
+    
+}
+@media (min-width:831px) and (max-width:1430px) {
+    section{
+        width:73%;
+    }
+    
+}

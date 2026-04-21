@@ -1,0 +1,258 @@
+.right-sidebar{
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    bottom: 0vh;
+    height: 1250px;
+    padding-top: 8vh;
+    margin-left: 65.2vw;
+    width: 33.8vw;
+}
+.subscribe-upper-div,
+.subscribe-upper-title-div,
+.discount,
+.subscribe-middle-div,
+.subscribe-lower-div{
+    display: inline-flex;
+}
+.subscribe-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:10px 0px 0px 31px;
+    width: 353px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.185);
+}
+.subscribe-upper-div{
+    margin: 15px 0px 0px 18px;
+}
+.subscribe-upper-title-div{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.discount{
+    background-color: rgb(0, 67, 41);
+    color: rgb(97, 214, 163);
+    margin-left: 10px;
+    padding: 2.5px 5px 2.5px 5px;
+    font-size: 15px;
+    border-radius: 7px;
+}
+.subscribe-middle-div{
+    margin: 13px 0px 0px 18px;
+    color: white;
+}
+.subscribe-lower-div{
+    margin: 16px 0px 20px 18px;
+}
+.subscribe-button{
+    width: 110px;
+    height: 38px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(29, 155, 240);
+    font-weight: bold;
+}
+.today-div{
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    margin-top: 50px;
+    width: 353px;
+    margin: 10px 0px 0px 31px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.185);
+}
+.today-title-div{
+    margin: 20px 25px 0px 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.today-title-left-div{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.close{
+    height: 20px;
+}
+.today-container{
+    padding: 15px 0px 15px 0px;
+}
+.today-container:hover,
+.today-last-container:hover,
+.what-happen-first-div:hover,
+.who-to-follow-conatiner:hover,
+.who-to-follow-show-more-div:hover,
+.show-more:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+    cursor: pointer;
+    transition: 0.15s;
+}
+.today-last-container{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.today-upper-container{
+    margin: 0px 25px 0px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.3;
+}
+.today-lower-container{
+    display: flex;
+    margin: 9px 0px 0px 0px;
+    align-items: center;
+}
+.pictures-container{
+    display: flex;
+    align-items: center;
+    margin-left: 23px;
+}
+.today-pic{
+    height: 20px;
+    border-radius: 15px;
+    margin-left: -9px;
+}
+.today-date{
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+}
+
+/* what happen div*/
+
+.what-happen-div{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    width: 353px;
+    margin: 10px 0px 0px 31px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.185);
+}
+.what-happen-title-div{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 20px 25px 15px 18px;
+}
+.what-happen-first-div{
+    padding: 10px 0px 10px 0px;
+    transition: 0.15s;
+}
+.what-happen-first-div-upper{
+    margin: 0px 25px 0px 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.trending{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.497);
+}
+.what-happen-first-div-lower{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    color: white;
+}
+.three-dots-rightside{
+    height: 20px;
+}
+.show-more{
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.show-more-text{
+    color: rgb(29, 156, 240);
+    font-size: 15px;
+    margin-left: 18px;
+}
+
+/*who to follow*/
+.who-to-follow-div{
+    margin-top: 50px;
+    width: 353px;
+    margin: 10px 0px 0px 31px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.185);
+    display: grid;
+    grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+}
+.who-to-follow-title-div{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 20px 25px 15px 18px;
+}
+.who-to-follow-conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0px 10px 0px;
+}
+.pic-and-name{
+    margin-left: 18px;
+    display: flex;
+}
+.who-to-follow-pic{
+    height: 40px;
+    border-radius: 20px;
+}
+.who-to-follow-middle-upper-div{
+    display: flex;
+}
+.who-to-follow-name{
+    color: white;
+    font-weight: bold;
+}
+.who-to-follow-username{
+    color: rgba(255, 255, 255, 0.501);
+}
+.who-to-follow-right-div{
+    margin-right: 25px;
+}
+.follow-button{
+    width: 80px;
+    height: 36px;
+    border:none;
+    border-radius: 18px;
+    font-weight: bold;
+}
+.who-to-follow-show-more-div{
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.who-to-follow-show-more{
+    color: rgb(29, 156, 240);
+    font-size: 15px;
+    margin-left: 18px;
+}
+
+@media (min-width:1px) and (max-width: 1003px) {
+    .right-sidebar{
+        display: none;
+    }
+}
+
+@media (min-width:1003px) and (max-width: 1280px) {
+    .right-sidebar{
+        margin-left: 60.5vw;
+    }
+}

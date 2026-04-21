@@ -1,0 +1,7 @@
+.right-sidebar{
+    height: 700px;
+}
+.subscribe-div,
+.today-div{
+    display: none;
+}

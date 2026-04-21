@@ -1,0 +1,102 @@
+.header2{
+    margin-left: 26.2vw;
+    width: 38.9vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.652);
+    backdrop-filter: blur(4px);
+    height: 110px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.185);
+    border-bottom-style: solid;
+    border-left-width: 1px;
+    border-left-color: rgba(255, 255, 255, 0.284);
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-color: rgba(255, 255, 255, 0.185);
+    border-right-style: solid;
+}
+.upper-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lower-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    height: 8vh;
+}
+.header-lower-elements{
+    display: flex;
+    justify-content: center;
+    padding: 3vh 1.3vw 3vh 1.3vw;
+    font-size: 0.95rem;
+    
+}
+.header-lower-elements:hover{
+    background-color: rgba(255, 255, 255, 0.189);
+    cursor: pointer;
+    transition: 0.15s;
+}
+.search-bar-div{
+    width: 34vw;
+}
+.search-bar{
+    margin-left: 19px;
+    width: 100%;
+}
+.search-bar-icon{
+    top: 3.5px;
+    left: 15px;
+}
+.settings{
+    margin-right: 17px;
+    height: 3vh;
+}
+@media (min-width:1px) and (max-width:500px) {
+    .header2{
+        width: 99.5%;
+        margin: 0px;
+        padding: 0px;
+        height: 16.2vh;
+    }
+    .search-bar-div{
+        margin-left: 0px;
+        width: 80%;
+    }
+    .header-lower-elements{
+        padding: 0px;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width:344px) and (max-width:345px) {
+    .header2{
+        width: 95%;
+        margin: 0px;
+        padding: 0px;
+        height: 16.2vh;
+    }
+    nav{
+        width: 95%;
+    }
+}
+@media (min-width:500px) and (max-width: 1003px) {
+    .header2{
+        margin-left: 10vw;
+        width: 89.4%;
+    }
+    .search-bar-div{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1003px) and (max-width:1281px) {
+    .header2{
+        margin-left: 14.6vw;
+        width: 45.85vw;
+    }
+    .search-bar-div{
+        width: 40vw;
+    }
+}

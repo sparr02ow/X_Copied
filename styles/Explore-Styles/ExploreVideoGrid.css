@@ -1,0 +1,259 @@
+section{
+    padding-top: 15vh;
+}
+.today-layout{
+    height: 6vh;
+    padding: 15px 15px 15px 15px;
+}
+.today-layout:hover,
+.trending-events:hover,
+.whoto-follow:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+    cursor: pointer;
+    transition: 0.15s;
+}
+/*today and who to follow titles*/
+.today-layout-title,
+.who_to_follow-layout-title{
+    height: 3vh;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.today-layout p{
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.today-lower-layout{
+    display: flex;
+    align-items: center;
+}
+.today-left-lower-layout{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+.today-left-lower-layout img{
+    height: 3vh;
+    border-radius: 20px;
+    margin-left: -9px;
+}
+.today-right-lower-layout p{
+    font-size: 0.885rem;
+}
+/* trending events settings*/
+.trending-events{
+    padding: 15px 15px 15px 15px;
+}
+.trending-events-upper{
+    display: flex;
+    justify-content: space-between;
+}
+.trending-events-upper p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+.trending-events-upper img{
+    height: 18px;
+}
+.trending-events-lower{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+/*who to follow settings*/
+.whoto-follow{ /* created this div because I don't want the layout of the "video-grid" to change, because I'm gonna use grid-columns*/
+    display: grid;
+    grid-template-columns: 55px 1fr 100px ;
+    align-items: center;
+}
+
+.WhoLeft{
+    height: 10vh;
+    padding: 0px 0px 0px 15px;
+}
+.account1,
+.account2,
+.account3{
+    height: 40px;
+    border-radius: 20px;
+}
+.account2{
+    margin-top: 22px;
+}
+.account3{
+    margin-top: 10px;
+}
+.icon{
+    height: 20px;
+}
+.WhoMiddle{
+    padding: 15px 0px 15px 0px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.stats-div{
+    display: flex;
+    position: relative;
+}
+.stats-div img{
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    height: 20px;
+}
+.stats{
+    color: gray;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.name-div{
+    display: flex;
+    align-items: center;
+}
+.name-div img{
+    height: 20px;
+    margin-left: 1px;
+}
+.name{
+    font-weight: bold;
+    font-size: 0.98rem;
+    text-decoration: none;
+    color: white;
+}
+.username{
+    color: rgba(255, 255, 255, 0.362);
+    font-weight: 100;
+}
+.decription{
+    margin-top: 5px;
+}
+.Hashtag{
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+}
+.name:hover,
+.Hashtag:hover{
+    text-decoration: underline;
+}
+.stats,
+.name-div,
+.name,
+.username,
+.decription,
+.Hashtag{
+    margin-bottom: 2px;
+}
+
+.WhoRight{
+    padding: 0px 15px 0px 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.WhoRight button{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.775);
+    border: none;
+    height: 32px;
+    width: 80px;
+    border-radius: 16px;
+}
+.show-more1{
+    padding: 10px 15px 10px 15px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    width: 8vw;
+    color: rgb(29, 156, 240);
+}
+
+@media (min-width:1px) and (max-width:500px) {
+    .today-layout{
+        padding-bottom: 30px;
+    }
+    .today-layout-title,
+    .who_to_follow-layout-title{
+    height: 1.5vh;
+    font-size: 1.15rem;
+    
+}
+.today-layout p{
+    font-size: 0.9rem
+}
+.today-right-lower-layout p{
+    font-size: 0.75rem;
+}
+.stats{
+    font-size: 0.8rem;
+}
+.name{
+    font-size: 0.88rem;
+}
+.username{
+    font-size: 0.75rem;
+}
+.decription,
+.Hashtag{
+    font-size: 0.82rem;
+}
+}
+@media (min-width:344px) and (max-width:345px) {
+    .WhoRight{
+        justify-content: flex-start;
+        width: 65px;
+    }
+    .WhoRight button{
+        width: 60px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:768px) and (max-width:770px)
+and (min-height:1024px) and (max-height:1026px){
+    section{
+        padding-top: 10.8vh;
+    }
+}
+@media (min-width:820px) and (max-width:822px)
+and (min-height:1180px) and (max-height: 1182px){
+    section{
+        padding-top: 9.5vh;
+    }
+}
+@media (min-width:912px) and (max-width:912px)
+and (min-height:1368px) and (max-height: 1368px){
+    section{
+        padding-top: 8.2vh;
+    }
+}
+@media (min-width:853px) and (max-width:854px)
+and (min-height:1280px) and (max-height: 1281px){
+    section{
+        padding-top: 8.6vh;
+    }
+}
+@media (min-width: 501px) and (max-width:501px)
+and (min-height: 716px) and (max-height: 1038px) {
+    section{
+        padding-top: 11vh;
+    }
+}
+@media (min-width: 501px) and (max-width:501px)
+and (min-height: 1180px) and (max-height: 1400px) {
+    section{
+        padding-top: 9.6vh;
+    }
+}
+@media (min-height:600px) and (max-height:601px) {
+    section{
+        padding-top: 18.4vh;
+    }
+}
+@media (min-height:800px) and (max-height:801px) {
+    section{
+        padding-top: 13.8vh;
+    }
+}

@@ -1,0 +1,33 @@
+header{
+    display: grid;
+    grid-template-rows: 5.5vh 1fr;
+    height: 13.4vh;
+    padding-top: 15px;
+}
+.upper-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px 0px 15px;
+}
+.upper-left-header{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+}
+.lower-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.all,
+.mentions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.15s;
+}
+.all:hover,
+.mentions:hover{
+    background-color: rgba(255, 255, 255, 0.173);
+    cursor: pointer;
+}
